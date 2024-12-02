@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Hogwarts ABCs.sln"
+    "dotnet.defaultSolution": "english-learning.sln"
 }

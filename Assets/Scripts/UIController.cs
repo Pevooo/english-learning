@@ -9,6 +9,9 @@ public class UIController : MonoBehaviour
     public Button ToggleSoundButton;
     public Button ExitButton;
     public Button StartButton;
+    public Sprite SoundOnSprite;
+    public Sprite SoundOffSprite;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +19,10 @@ public class UIController : MonoBehaviour
         ToggleSoundButton.onClick.AddListener(() => {
             if (AudioListener.volume == 0) {
                 AudioListener.volume = 1;
-                ToggleSoundButton.GetComponentInChildren<Text>().text = "Toggle Sound: On";
+                ToggleSoundButton.GetComponent<Image>().sprite = SoundOnSprite;
             } else {
                 AudioListener.volume = 0;
-                ToggleSoundButton.GetComponentInChildren<Text>().text = "Toggle Sound: Off";
+                ToggleSoundButton.GetComponent<Image>().sprite = SoundOffSprite;
             }
         });
 
