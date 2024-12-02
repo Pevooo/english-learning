@@ -22,7 +22,7 @@ public class AlphabetHandler : MonoBehaviour
             displayIndex++;
             DisplayText.text = getDisplayText();
 
-            if (displayIndex == smallAlphabet.Length) {
+            if (displayIndex == smallAlphabet.Length - 1) {
                 NextButton.enabled = false;
             } else {
                 BackButton.enabled = true;

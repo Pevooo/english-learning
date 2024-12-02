@@ -65,6 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\EventHandler.cs" />
+    <Compile Include="Assets\Scripts\PersistentMusic.cs" />
+    <Compile Include="Assets\Scripts\SelectCharacterController.cs" />
     <Compile Include="Assets\Scripts\AlphabetHandler.cs" />
   </ItemGroup>
   <ItemGroup>

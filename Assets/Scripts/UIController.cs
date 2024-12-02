@@ -12,6 +12,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        AudioListener.volume = 1;
         ToggleSoundButton.onClick.AddListener(() => {
             if (AudioListener.volume == 0) {
                 AudioListener.volume = 1;
@@ -23,7 +24,7 @@ public class UIController : MonoBehaviour
         });
 
         StartButton.onClick.AddListener(() => {
-            SceneManager.LoadScene("AlphabetLearn");
+            SceneManager.LoadScene("CharacterSelect");
         });
 
         ExitButton.onClick.AddListener(() => {
@@ -35,11 +36,5 @@ public class UIController : MonoBehaviour
                 Application.Quit();
             #endif
         });
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
