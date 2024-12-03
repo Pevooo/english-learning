@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterSelect.unity
     guid: ad2b87cfe8ee436469dec2cc60c53305
+  - enabled: 1
+    path: Assets/Scenes/NumbersLearn.unity
+    guid: 3f34cc6fce4e0f54596cebf29d73896c
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: ea8266204840b3f41b76cbbf41413b45
   m_configObjects: {}

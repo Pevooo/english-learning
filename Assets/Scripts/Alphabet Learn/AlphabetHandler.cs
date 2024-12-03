@@ -2,35 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class AlphabetHandler : MonoBehaviour
 {
     public Button NextButton;
     public Button BackButton;
     public Button AudioPlayButton;
-    public Text DisplayText;
-    private int displayIndex = 0;
-    private string smallAlphabet = "abcdefghijklmnopqrstuvwxyz";
-    private string capitalAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public AudioClip[] clips;
+    public AudioClip[] AlphabetClips;
+    public Sprite[] AlphabetImages;
+    public Button NextLevelButton;
+    private int currentIndex = 0;
     private AudioSource audioSource;
-    // Start is called before the first frame update
+    private Image backgroundImage;
     void Start()
     {
-
         audioSource = GetComponent<AudioSource>();
-        PlayAudio();
-
-        DisplayText.text = getDisplayText();
+        backgroundImage = GameObject.Find("Panel").GetComponent<Image>();
 
         BackButton.enabled = false;
-
+        PlayAudio();
+        SetBackground();
         NextButton.onClick.AddListener(() => {
-            displayIndex++;
-            DisplayText.text = getDisplayText();
+            currentIndex++;
             PlayAudio();
-
-            if (displayIndex == smallAlphabet.Length - 1) {
+            SetBackground();
+            if (currentIndex == AlphabetClips.Length - 1) {
                 NextButton.enabled = false;
             } else {
                 BackButton.enabled = true;
@@ -39,11 +36,10 @@ public class AlphabetHandler : MonoBehaviour
         });
 
         BackButton.onClick.AddListener(() => {
-            displayIndex--;
-            DisplayText.text = getDisplayText();
+            currentIndex--;
             PlayAudio();
-
-            if (displayIndex == 0) {
+            SetBackground();
+            if (currentIndex == 0) {
                 BackButton.enabled = false;
             } else {
                 BackButton.enabled = true;
@@ -51,17 +47,21 @@ public class AlphabetHandler : MonoBehaviour
             }
         });
 
-         AudioPlayButton.onClick.AddListener(() => {
+        AudioPlayButton.onClick.AddListener(() => {
             PlayAudio();
+        });
+
+        NextLevelButton.onClick.AddListener(() => {
+            SceneManager.LoadScene("NumbersLearn");
         });
     }
     
-    string getDisplayText() {
-        return capitalAlphabet[displayIndex].ToString() + smallAlphabet[displayIndex].ToString();
-    }
-    void PlayAudio(){
-
-        audioSource.clip = clips[displayIndex];
+    void PlayAudio() {
+        audioSource.clip = AlphabetClips[currentIndex];
         audioSource.Play();
+    }
+
+    void SetBackground() {
+        backgroundImage.sprite = AlphabetImages[currentIndex];
     }
 }

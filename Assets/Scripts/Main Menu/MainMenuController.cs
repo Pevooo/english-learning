@@ -4,27 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class UIController : MonoBehaviour
+public class MainMenuController : MonoBehaviour
 {
-    public Button ToggleSoundButton;
     public Button ExitButton;
     public Button StartButton;
-    public Sprite SoundOnSprite;
-    public Sprite SoundOffSprite;
 
     // Start is called before the first frame update
     void Start()
     {
         AudioListener.volume = 1;
-        ToggleSoundButton.onClick.AddListener(() => {
-            if (AudioListener.volume == 0) {
-                AudioListener.volume = 1;
-                ToggleSoundButton.GetComponent<Image>().sprite = SoundOnSprite;
-            } else {
-                AudioListener.volume = 0;
-                ToggleSoundButton.GetComponent<Image>().sprite = SoundOffSprite;
-            }
-        });
 
         StartButton.onClick.AddListener(() => {
             SceneManager.LoadScene("CharacterSelect");
