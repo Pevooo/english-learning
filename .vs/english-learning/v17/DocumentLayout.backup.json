@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Assets\\NumberListController.cs",
               "ToolTip": "D:\\UnityProject\\english-learning\\Assets\\NumberListController.cs",
               "RelativeToolTip": "Assets\\NumberListController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T15:12:41.318Z",
               "EditorCaption": ""
@@ -51,7 +51,8 @@
               "RelativeToolTip": "Assets\\Scripts\\AlphabetHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T14:29:18.781Z"
+              "WhenOpened": "2024-12-03T14:29:18.781Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,7 +64,8 @@
               "RelativeToolTip": "Assets\\Scripts\\EventHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T14:19:06.941Z"
+              "WhenOpened": "2024-12-03T14:19:06.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,7 +77,8 @@
               "RelativeToolTip": "Assets\\Scripts\\UIController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T20:48:26.431Z"
+              "WhenOpened": "2024-12-02T20:48:26.431Z",
+              "EditorCaption": ""
             }
           ]
         }
