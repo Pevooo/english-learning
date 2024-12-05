@@ -18,17 +18,17 @@ public class SelectCharacterController : MonoBehaviour
 
         HarryPotterButton.onClick.AddListener(() => {
             PlayerPrefs.SetString("Character", "HarryPotter");
-            SceneManager.LoadScene("AlphabetLearn");
+            SceneManager.LoadScene("LevelSelect");
         });
 
         RonWeaselyButton.onClick.AddListener(() => {
             PlayerPrefs.SetString("Character", "RonWeasely");
-            SceneManager.LoadScene("AlphabetLearn");
+            SceneManager.LoadScene("LevelSelect");
         });
 
         HermoineGrangerButton.onClick.AddListener(() => {
             PlayerPrefs.SetString("Character", "HermoineGranger");
-            SceneManager.LoadScene("AlphabetLearn");
+            SceneManager.LoadScene("LevelSelect");
         });
     }
 
