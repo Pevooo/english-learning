@@ -1,0 +1,510 @@
+fileFormatVersion: 2
+guid: d2162bf9a6490844f8b3dd539d7e05b9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1992
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc08271e68e8b4c49a29c1fdc8d37567
+      internalID: 1905338995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1992
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9599b02d3cf255e41a8b08935ea4a528
+      internalID: 1096479878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1992
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9e158f6c9c4be4880561d6be32eb9b
+      internalID: 1623776635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1992
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0380f04cb197a07448fac93eea15ef55
+      internalID: 2106201409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1992
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77faec84380b5f14e82e0bbb6e4e693c
+      internalID: 1500974408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1328
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d95e7a4bf0547e4cad3b145fa5a822a
+      internalID: -982962094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1328
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a62805a5ae10f4ca5aebbb3d38f2c7
+      internalID: -486943428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 1328
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ef0b17f52db648ac32ae7dc65c0ff
+      internalID: -1501153955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 1328
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609db2b1e082e2945a02d41722ecac38
+      internalID: 15003139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 1328
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ec139e788124c41a6a35c934d0c535
+      internalID: -735227444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e68c5e747465c44944e8f269f5cfef
+      internalID: -1015701080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 664
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73987adaa6b24d44bb99ef6ddfa45dd3
+      internalID: 321685347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 664
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d474146d2ed9841bbb608b4b9fae23
+      internalID: -1347155249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2496
+        y: 664
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f32eca2ebb9ab4c91bc4d170d8c82a
+      internalID: -486147852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 664
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38644a1a9f3b0e44090b0f38bb543c3f
+      internalID: 342820965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5c1428059fb0c4c9753fb6e741e217
+      internalID: -1096663050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e111a83085dd8b8449adefbaee979aeb
+      internalID: 1389738052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spell_projectile_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 832
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca535a1134075247bd6cf95ef177b9f
+      internalID: -2109502119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4333e975814bc8943b897cc32591713a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spell_projectile_spritesheet_0: 1905338995
+      spell_projectile_spritesheet_1: 1096479878
+      spell_projectile_spritesheet_10: -1015701080
+      spell_projectile_spritesheet_11: 321685347
+      spell_projectile_spritesheet_12: -1347155249
+      spell_projectile_spritesheet_13: -486147852
+      spell_projectile_spritesheet_14: 342820965
+      spell_projectile_spritesheet_15: -1096663050
+      spell_projectile_spritesheet_16: 1389738052
+      spell_projectile_spritesheet_17: -2109502119
+      spell_projectile_spritesheet_2: 1623776635
+      spell_projectile_spritesheet_3: 2106201409
+      spell_projectile_spritesheet_4: 1500974408
+      spell_projectile_spritesheet_5: -982962094
+      spell_projectile_spritesheet_6: -486943428
+      spell_projectile_spritesheet_7: -1501153955
+      spell_projectile_spritesheet_8: 15003139
+      spell_projectile_spritesheet_9: -735227444
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

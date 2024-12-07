@@ -1,13 +1,16 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LearningLevelController : MonoBehaviour
 {
     public Button NextButton;
     public Button BackButton;
     public Button AudioPlayButton;
+    public Button NextLevelButton;
     public AudioClip[] AudioClips;
     public Sprite[] Sprites;
+    public string NextScene;
     private AudioSource audioSource;
     private Image backgroundImage;
     private int currentIndex = 0;
@@ -25,6 +28,8 @@ public class LearningLevelController : MonoBehaviour
         NextButton.onClick.AddListener(OnNext);
 
         BackButton.onClick.AddListener(OnBack);
+
+        NextLevelButton.onClick.AddListener(OnNextLevel);
 
         AudioPlayButton.onClick.AddListener(PlayAudio);
     }
@@ -65,5 +70,9 @@ public class LearningLevelController : MonoBehaviour
             BackButton.enabled = true;
             NextButton.enabled = true;
         }
+    }
+
+    void OnNextLevel() {
+        SceneManager.LoadScene(NextScene);
     }
 }

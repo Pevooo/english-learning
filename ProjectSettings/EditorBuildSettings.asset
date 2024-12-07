@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: ea8266204840b3f41b76cbbf41413b45
+  - enabled: 1
+    path: Assets/Scenes/Quiz.unity
+    guid: 264fced905fbd7f429ce69feafef0f60
   m_configObjects: {}
