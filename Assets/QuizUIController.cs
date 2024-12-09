@@ -29,7 +29,7 @@ public class QuizUIController : MonoBehaviour
             elapsedTime++;
             Time--;
             remainingTimeText.text = $"Remaining Time: {Time}";
-            elapsedTimeText.text = $"Remaining Time: {elapsedTime}";
+            elapsedTimeText.text = $"Elapsed Time: {elapsedTime}";
         }
 
         onTimerRunOut();

@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         float movement = Input.GetAxis("Horizontal");
         if (movement < -0.2) {
             GetComponent<SpriteRenderer>().flipX = true;
-        } else {
+        } else if (movement > 0.2) {
             GetComponent<SpriteRenderer>().flipX = false;
         }
         transform.Translate(Vector2.right * movement * movementSpeed * Time.deltaTime);
@@ -97,9 +97,18 @@ public class PlayerController : MonoBehaviour
 
         // Calculate direction
         Vector3 direction = (mousePosition - transform.position).normalized;
-        Debug.Log($"{mousePosition} {transform.position}");
+        if (direction.x > 0)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        } else
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
         // Spawn the projectile
-        GameObject projectile = Instantiate(projectilePrefab, transform.position + Vector3.right * 2, Quaternion.identity);
+        GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        projectile.transform.rotation = Quaternion.Euler(0, 0, angle);
 
         // Apply force to the projectile's Rigidbody2D
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
