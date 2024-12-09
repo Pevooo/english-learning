@@ -60,13 +60,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\SoundButtonHandler.cs" />
+    <Compile Include="Assets\Scripts\AnimationHandler.cs" />
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
+    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\QuizUIController.cs" />
     <Compile Include="Assets\Scripts\ButtonFloat.cs" />
     <Compile Include="Assets\Scripts\LevelSelect.cs" />
+    <Compile Include="Assets\JumpTutorial.cs" />
+    <Compile Include="Assets\SpellProjectileController.cs" />
     <Compile Include="Assets\Scripts\EventHandler.cs" />
     <Compile Include="Assets\Scripts\LearningLevelController.cs" />
+    <Compile Include="Assets\QuizController.cs" />
     <Compile Include="Assets\Scripts\PersistentMusic.cs" />
-    <Compile Include="Assets\AnimationHandler.cs" />
+    <Compile Include="Assets\FloatingPlatform.cs" />
     <Compile Include="Assets\Scripts\ButtonSoundEffects.cs" />
     <Compile Include="Assets\Scripts\SelectCharacterController.cs" />
   </ItemGroup>
