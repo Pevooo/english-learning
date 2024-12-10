@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
         // Check that the player has not fallen down
         if (transform.position.y < -10) {
             transform.position = new Vector3(-5, 1, 0);
+            var uiController = GameObject.Find("QuizUIController").GetComponent<QuizUIController>();
+            uiController.SetHealth(uiController.health - 1);
         }
     }
 
