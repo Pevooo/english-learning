@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuizUIController : MonoBehaviour
 {
@@ -36,6 +37,6 @@ public class QuizUIController : MonoBehaviour
     }
 
     void onTimerRunOut() {
-
+        //SceneManager.LoadScene("GameOver");
     }
 }

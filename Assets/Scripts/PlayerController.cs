@@ -39,9 +39,9 @@ public class PlayerController : MonoBehaviour
     {
         // Left and Right movement
         float movement = Input.GetAxis("Horizontal");
-        if (movement < -0.2) {
+        if (movement < -0.1) {
             GetComponent<SpriteRenderer>().flipX = true;
-        } else if (movement > 0.2) {
+        } else if (movement > 0.1) {
             GetComponent<SpriteRenderer>().flipX = false;
         }
         transform.Translate(Vector2.right * movement * movementSpeed * Time.deltaTime);
@@ -59,10 +59,16 @@ public class PlayerController : MonoBehaviour
         {
             LaunchProjectile();
         }
+
+        // Check that the player has not fallen down
+        if (transform.position.y < -10) {
+            transform.position = new Vector3(-5, 1, 0);
+        }
     }
 
     void Jump()
     {
+        GetComponentInChildren<ParticleSystem>().Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 
@@ -75,8 +81,9 @@ public class PlayerController : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision) {
         foreach (ContactPoint2D contact in collision.contacts)
         {
-            if (contact.normal.y > 0.5f)
+            if (contact.normal.y > 0.1f)
             {
+                Debug.Log(contact.normal.y);
                 isOnGround = true;
             }
         }
@@ -100,8 +107,7 @@ public class PlayerController : MonoBehaviour
         if (direction.x > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
-        } else
-        {
+        } else {
             GetComponent<SpriteRenderer>().flipX = true;
         }
         // Spawn the projectile

@@ -18,6 +18,12 @@ public class SpellProjectileController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnCollisionStay2D(Collision2D collision) {
+        var particles = Instantiate(particlePrefab, transform.position, Quaternion.identity);
+        particles.GetComponent<ParticleSystem>().Play();
+        Destroy(gameObject);
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.name == "Character")
