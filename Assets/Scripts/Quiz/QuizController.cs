@@ -11,12 +11,6 @@ public class QuizController : MonoBehaviour
         StartCoroutine(FadeIn(movementTutorialText));
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     public IEnumerator FadeIn(TextMesh textMesh)
     {
         Color color = textMesh.color;
@@ -33,5 +27,9 @@ public class QuizController : MonoBehaviour
 
         color.a = 1f;
         textMesh.color = color;
+    }
+
+    public void StartExternalCoroutine(IEnumerator coroutine) {
+        StartCoroutine(coroutine);
     }
 }

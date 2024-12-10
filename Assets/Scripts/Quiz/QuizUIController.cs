@@ -37,6 +37,6 @@ public class QuizUIController : MonoBehaviour
     }
 
     void onTimerRunOut() {
-        //SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
     }
 }

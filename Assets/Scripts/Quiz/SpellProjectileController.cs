@@ -8,19 +8,20 @@ public class SpellProjectileController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         Destroy(gameObject, 5);
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
         var particles = Instantiate(particlePrefab, transform.position, Quaternion.identity);
         particles.GetComponent<ParticleSystem>().Play();
+        Destroy(particles, 5);
         Destroy(gameObject);
     }
 
     void OnCollisionStay2D(Collision2D collision) {
         var particles = Instantiate(particlePrefab, transform.position, Quaternion.identity);
         particles.GetComponent<ParticleSystem>().Play();
+        Destroy(particles, 5);
         Destroy(gameObject);
     }
 
