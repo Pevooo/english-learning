@@ -15,14 +15,14 @@ public class PlayerController : MonoBehaviour
     public float launchForce = 10f;    // The speed of the projectile
     public float cooldownTime = 0.5f;  // Cooldown duration in seconds
     private float lastLaunchTime = -Mathf.Infinity;
-    Rigidbody2D rb;
-    bool isOnGround;
+    private Rigidbody2D rb;
+    private bool isOnGround;
+    private bool isShaking = false;
     void Start()
     {
 
         // Setting current sprite
         string player = PlayerPrefs.GetString("Character");
-        Debug.Log(player);
         if (player == "HarryPotter") {
             GetComponent<SpriteRenderer>().sprite = HarrySprite;
         } else if (player == "RonWeasely") {
@@ -73,9 +73,17 @@ public class PlayerController : MonoBehaviour
     }
 
     void SetCameraPosition() {
-        Vector3 newPositon = mainCamera.transform.position;
-        newPositon.x = Math.Max(transform.position.x + 5f, 0);
-        mainCamera.transform.position = newPositon;
+        Vector3 newPosition = mainCamera.transform.position;
+        newPosition.x = Math.Max(transform.position.x + 5f, 0);
+        newPosition.y = 5;
+        mainCamera.transform.position = newPosition;
+    }
+
+    Vector3 GetCameraPosition() {
+        Vector3 newPosition = mainCamera.transform.position;
+        newPosition.x = Math.Max(transform.position.x + 5f, 0);
+        newPosition.y = 5;
+        return newPosition;
     }
 
     void OnCollisionStay2D(Collision2D collision) {
@@ -83,7 +91,6 @@ public class PlayerController : MonoBehaviour
         {
             if (contact.normal.y > 0.1f)
             {
-                Debug.Log(contact.normal.y);
                 isOnGround = true;
             }
         }
@@ -95,6 +102,10 @@ public class PlayerController : MonoBehaviour
 
    void LaunchProjectile()
     {
+
+        // Play Sound
+        GetComponent<AudioSource>().Play();
+
 
         Vector3 screenMousePosition = Input.mousePosition;
         // Get the mouse position in world space
@@ -122,5 +133,31 @@ public class PlayerController : MonoBehaviour
 
         // Update the last launch time
         lastLaunchTime = Time.time;
+    }
+
+    public void StartCameraShake() {
+        if (!isShaking) {
+            StartCoroutine(Shake(0.5f, 0.2f));
+        }
+    }
+    private IEnumerator Shake(float duration, float magnitude)
+    {
+        isShaking = true;
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            float offsetX = UnityEngine.Random.Range(-1f, 1f) * magnitude * ((duration - elapsed) / duration);
+            float offsetY = UnityEngine.Random.Range(-1f, 1f) * magnitude * ((duration - elapsed) / duration);
+
+            mainCamera.transform.localPosition = GetCameraPosition() + new Vector3(offsetX, offsetY, 0);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        SetCameraPosition();
+        isShaking = false;
     }
 }
