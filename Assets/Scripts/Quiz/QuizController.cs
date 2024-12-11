@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class QuizController : MonoBehaviour
 {
     public TextMesh movementTutorialText;
     public float animationTime = 2f;
+   // public question[] Questions=new question [4];
     void Start()
     {
         StartCoroutine(FadeIn(movementTutorialText));
