@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameOverController : MonoBehaviour
 {
     public void TryAgain() {
-        Debug.Log("Hi");
         SceneManager.LoadScene("Quiz");
     }
 }

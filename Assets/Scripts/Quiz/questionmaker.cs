@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using System;
-using System.Collections.Generic;
 public class QuestionMaker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //public GameObject questionprefab;
-    public Sprite questionpic,choice1,choice2,choice3;
+    public Sprite questionSprite;
+    public Sprite choice1;
+    public Sprite choice2;
+    public Sprite choice3;
+    public GameObject rightAnswer;
     public GameObject[] GetChildren(GameObject parent)
     {
         int childCount = parent.transform.childCount;
@@ -25,33 +26,15 @@ public class QuestionMaker : MonoBehaviour
 
     void Start()
     {
-        GameObject parentObject = this.gameObject; // Replace with your parent GameObject
-        GameObject[] childObjects = GetChildren(parentObject);
+        GameObject[] childObjects = GetChildren(gameObject);
 
-        childObjects[0].GetComponent<SpriteRenderer>().sprite=choice1;
-        childObjects[1].GetComponent<SpriteRenderer>().sprite=choice2;
-        childObjects[2].GetComponent<SpriteRenderer>().sprite=choice3;
-        childObjects[3].GetComponent<SpriteRenderer>().sprite=questionpic;
-        
-
+        // childObjects[0].GetComponent<SpriteRenderer>().sprite = choice1;
+        // childObjects[1].GetComponent<SpriteRenderer>().sprite = choice2;
+        // childObjects[2].GetComponent<SpriteRenderer>().sprite = choice3;
+        // childObjects[3].GetComponent<SpriteRenderer>().sprite = questionSprite;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void DestroyQuestion() {
+        Destroy(gameObject);
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log(other.name);
-        if(other.name=="Spell Explosion(Clone)"){
-            Destroy(gameObject);
-        }
-      
-
-        
-    }
-
-  
-   
 }

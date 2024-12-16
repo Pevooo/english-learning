@@ -52,6 +52,10 @@ public class QuizUIController : MonoBehaviour
             }
         }
     }
+
+    public void DecrementHealth() {
+        SetHealth(health - 1);
+    }
     void onTimerRunOut() {
         SceneManager.LoadScene("GameOver");
     }
