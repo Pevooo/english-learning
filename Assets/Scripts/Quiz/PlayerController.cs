@@ -14,12 +14,23 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     public float launchForce = 10f;    // The speed of the projectile
     public float cooldownTime = 0.5f;  // Cooldown duration in seconds
+    public AudioClip jumpSoundEffect;
+    public AudioClip projectileSoundEffect;
     private float lastLaunchTime = -Mathf.Infinity;
     private Rigidbody2D rb;
     private bool isOnGround;
     private bool isShaking = false;
+    private Dictionary<string, AudioSource> audioSources = new();
     void Start()
     {
+        var jumpAudioSource = gameObject.AddComponent<AudioSource>();
+        jumpAudioSource.clip = jumpSoundEffect;
+        audioSources.Add("jump", jumpAudioSource);
+  
+        var projectileAudioSource = gameObject.AddComponent<AudioSource>();
+        projectileAudioSource.clip = projectileSoundEffect;
+        audioSources.Add("stupify", projectileAudioSource);
+
 
         // Setting current sprite
         string player = PlayerPrefs.GetString("Character");
@@ -71,6 +82,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         GetComponentInChildren<ParticleSystem>().Play();
+        audioSources["jump"].Play();
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
     }
 
@@ -106,7 +118,7 @@ public class PlayerController : MonoBehaviour
     {
 
         // Play Sound
-        GetComponent<AudioSource>().Play();
+        audioSources["stupify"].Play();
 
 
         Vector3 screenMousePosition = Input.mousePosition;

@@ -10,7 +10,6 @@ public class LearningLevelController : MonoBehaviour
     public Button NextLevelButton;
     public AudioClip[] AudioClips;
     public Sprite[] Sprites;
-    public string NextScene;
     private AudioSource audioSource;
     private Image backgroundImage;
     private int currentIndex = 0;
@@ -29,7 +28,7 @@ public class LearningLevelController : MonoBehaviour
 
         BackButton.onClick.AddListener(OnBack);
 
-        NextLevelButton.onClick.AddListener(OnNextLevel);
+        NextLevelButton.onClick.AddListener(OnBackToLevelSelect);
 
         AudioPlayButton.onClick.AddListener(PlayAudio);
     }
@@ -72,7 +71,7 @@ public class LearningLevelController : MonoBehaviour
         }
     }
 
-    void OnNextLevel() {
-        SceneManager.LoadScene(NextScene);
+    void OnBackToLevelSelect() {
+        SceneManager.LoadScene("LevelSelect");
     }
 }
