@@ -172,23 +172,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.57344
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.57344
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.57344
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8077565235429614406, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       propertyPath: m_LocalPosition.x
@@ -246,6 +246,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6299735696528231966, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
       insertIndex: -1
       addedObject: {fileID: 39598969}
+    - targetCorrespondingSourceObject: {fileID: 6299735696528231966, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 39598970}
   m_SourcePrefab: {fileID: 100100000, guid: f5c06afa4dc32e542bf30fbb8a6d4103, type: 3}
 --- !u!224 &39598967 stripped
 RectTransform:
@@ -271,6 +274,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundOnSprite: {fileID: 21300000, guid: 2d73d004997c4ff479b1dc44c240a642, type: 3}
   SoundOffSprite: {fileID: 21300000, guid: 5634b2972e14eee4db50d42549777076, type: 3}
+--- !u!114 &39598970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39598968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1185355f7136540be52f512175cc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
+  UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
 --- !u!1 &80804506
 GameObject:
   m_ObjectHideFlags: 0
