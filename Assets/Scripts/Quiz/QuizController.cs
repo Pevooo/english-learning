@@ -11,6 +11,7 @@ public class QuizController : MonoBehaviour
     void Start()
     {
         StartCoroutine(FadeIn(movementTutorialText));
+        Destroy(GameObject.Find("BackgroundMusic"));
     }
 
     public IEnumerator FadeIn(TextMesh textMesh)
