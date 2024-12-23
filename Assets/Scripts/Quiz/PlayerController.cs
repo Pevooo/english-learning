@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float cooldownTime = 0.5f;  // Cooldown duration in seconds
     public AudioClip jumpSoundEffect;
     public AudioClip projectileSoundEffect;
+    public AudioClip damageSoundEffect;
     private float lastLaunchTime = -Mathf.Infinity;
     private Rigidbody2D rb;
     private bool isOnGround;
@@ -30,6 +31,10 @@ public class PlayerController : MonoBehaviour
         var projectileAudioSource = gameObject.AddComponent<AudioSource>();
         projectileAudioSource.clip = projectileSoundEffect;
         audioSources.Add("stupify", projectileAudioSource);
+
+        var damageAudioSource = gameObject.AddComponent<AudioSource>();
+        damageAudioSource.clip = damageSoundEffect;
+        audioSources.Add("damage", damageAudioSource);
 
 
         // Setting current sprite
@@ -181,6 +186,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator DamageEffect()
     {
+        audioSources["damage"].Play();
         var renderer = GetComponent<SpriteRenderer>();
         renderer.color = new Color(100, 0, 0);
         yield return new WaitForSeconds(0.3f);
