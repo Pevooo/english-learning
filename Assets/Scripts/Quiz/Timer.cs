@@ -51,6 +51,7 @@ public class Timer : MonoBehaviour
     
     private void Update(){
         if (remainingDuration == 15) {
+            GetComponent<Image>().color = new Color(100, 0, 0);
             GetComponentInChildren<Text>().color = new Color(100, 0, 0);
             GetComponentInChildren<Image>().color = new Color(100, 0, 0);
         }

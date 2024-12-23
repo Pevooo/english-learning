@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\BackToMenuButton.cs" />
     <Compile Include="Assets\Scripts\Quiz\QuizController.cs" />
     <Compile Include="Assets\Scripts\EventHandler.cs" />
-    <Compile Include="Assets\Scripts\Quiz\TriggerQuestionController.cs" />
     <Compile Include="Assets\Scripts\GameOverController.cs" />
     <Compile Include="Assets\Scripts\LearningLevelController.cs" />
     <Compile Include="Assets\Scripts\Quiz\QuizUIController.cs" />
