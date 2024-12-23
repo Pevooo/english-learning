@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     private void ResetTimer(){
         uiText.text="00:00";
         uiFillImage.fillAmount = 0f;
-        Duration = remainingDuration =0 ;
+        Duration = remainingDuration = 0;
     }
     public Timer SetDuration (int seconds){
         Duration = remainingDuration = seconds;
@@ -48,5 +48,11 @@ public class Timer : MonoBehaviour
     private void OnDestroy(){
         StopAllCoroutines();
     }
-   
+    
+    private void Update(){
+        if (remainingDuration == 15) {
+            GetComponentInChildren<Text>().color = new Color(100, 0, 0);
+            GetComponentInChildren<Image>().color = new Color(100, 0, 0);
+        }
+    }
 }

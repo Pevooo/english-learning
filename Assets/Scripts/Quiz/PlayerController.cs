@@ -174,4 +174,17 @@ public class PlayerController : MonoBehaviour
         SetCameraPosition();
         isShaking = false;
     }
+
+    public void StartDamageEffect() {
+        StartCoroutine(DamageEffect());
+    }
+
+    private IEnumerator DamageEffect()
+    {
+        var renderer = GetComponent<SpriteRenderer>();
+        renderer.color = new Color(100, 0, 0);
+        yield return new WaitForSeconds(0.3f);
+        renderer.color = new Color(255, 255, 255);
+        yield return null;
+    }
 }

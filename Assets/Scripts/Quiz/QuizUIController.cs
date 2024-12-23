@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -17,12 +16,6 @@ public class QuizUIController : MonoBehaviour
     {
         
         StartCoroutine(StartTimer());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator StartTimer() {
@@ -43,6 +36,8 @@ public class QuizUIController : MonoBehaviour
                 Hearts[i].sprite = EmptyHeart;
             }
         }
+        var controller = GameObject.Find("Character").GetComponent<PlayerController>();
+        controller.StartDamageEffect();
     }
 
     public void DecrementHealth() {

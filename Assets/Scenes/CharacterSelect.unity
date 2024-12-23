@@ -288,6 +288,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
   UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
+--- !u!1 &77496214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4350361955114932047, guid: f9baec6d073c3894b8ef1e1957322652, type: 3}
+  m_PrefabInstance: {fileID: 7089933320169780830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &80804506
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +306,7 @@ GameObject:
   - component: {fileID: 80804509}
   - component: {fileID: 80804508}
   - component: {fileID: 80804511}
+  - component: {fileID: 80804512}
   m_Layer: 5
   m_Name: Hermoine Granger Button
   m_TagString: Untagged
@@ -423,6 +429,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonText: Hermoine Granger
   controller: {fileID: 0}
+--- !u!114 &80804512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80804506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1185355f7136540be52f512175cc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
+  UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
 --- !u!1 &156699190
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +596,7 @@ GameObject:
   - component: {fileID: 485778119}
   - component: {fileID: 485778118}
   - component: {fileID: 485778121}
+  - component: {fileID: 485778122}
   m_Layer: 5
   m_Name: Harry Potter Button
   m_TagString: Untagged
@@ -698,6 +719,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonText: Harry Potter
   controller: {fileID: 0}
+--- !u!114 &485778122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485778116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1185355f7136540be52f512175cc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
+  UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
 --- !u!1 &708335396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1094,20 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7267509120990131657, guid: f9baec6d073c3894b8ef1e1957322652, type: 3}
   m_PrefabInstance: {fileID: 7089933320169780830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1548456521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77496214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1185355f7136540be52f512175cc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
+  UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
 --- !u!1 &1672033157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1121,7 @@ GameObject:
   - component: {fileID: 1672033160}
   - component: {fileID: 1672033159}
   - component: {fileID: 1672033162}
+  - component: {fileID: 1672033163}
   m_Layer: 5
   m_Name: Ron Weasely Button
   m_TagString: Untagged
@@ -1194,6 +1244,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ButtonText: Ron Weasely
   controller: {fileID: 0}
+--- !u!114 &1672033163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672033157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1185355f7136540be52f512175cc93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverSoundEffect: {fileID: 8300000, guid: 1cff90696d554274694a0fe19310855c, type: 3}
+  UnhoverSoundEffect: {fileID: 8300000, guid: 13f9f7a5f9d594e47886f460c71f710d, type: 3}
 --- !u!1 &1965294071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1421,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4350361955114932047, guid: f9baec6d073c3894b8ef1e1957322652, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1548456521}
   m_SourcePrefab: {fileID: 100100000, guid: f9baec6d073c3894b8ef1e1957322652, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
